@@ -1,0 +1,19 @@
+{
+  "name": "bootstrap-gulp-sass-starter",
+  "version": "0.0.1",
+  "authors": [
+    "Ruven Pelka <ruvenpelka@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://ruvenpelka.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5"
+  }
+}
