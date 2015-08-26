@@ -140,11 +140,6 @@ gulp.task('watch', function() {
 });
 
 /**
- * Build Bootstrap
- */
-gulp.task('bootstrap', ['bootstrap:fonts']);
-
-/**
  * Delete dist
  */
 gulp.task('clean', function(cb) {
@@ -158,6 +153,11 @@ gulp.task('clean', function(cb) {
  * Build dist
  */
 gulp.task('build', ['sass', 'html', 'js', 'bootstrap']);
+
+/**
+ * Build Bootstrap
+ */
+gulp.task('bootstrap', ['bootstrap:fonts']);
 
 /**
  * Default
