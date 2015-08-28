@@ -5,6 +5,7 @@ var sourcemaps   = require('gulp-sourcemaps');
 var browser_sync = require('browser-sync');
 var uglify       = require('gulp-uglify');
 var concat       = require('gulp-concat');
+var rename       = require('gulp-rename');
 var run_sequence = require('run-sequence');
 var del          = require('del');
 
@@ -12,9 +13,10 @@ var del          = require('del');
  * App specs
  */
 var app = {
-    dist_path:         './dist',
-    src_path:          './src',
-    main_js_file_name: 'main.min.js',
+    dist_path: './dist',
+    src_path:  './src',
+    main_css_file_name: 'main.min.css',
+    main_js_file_name:  'main.min.js',
     open_browser_on_server_start: true
 };
 
@@ -79,6 +81,7 @@ gulp.task('sass', function() {
             .pipe(autoprefixer({
                 browsers: ['ie 8', 'ie 9', 'last 2 versions']
             }))
+        .pipe(rename(app.main_css_file_name))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(dist_path.css))
         // make browser_sync inject only .css files with 'match'
@@ -170,5 +173,3 @@ gulp.task('default', function(callback) {
         callback
     );
 });
-
-//gulp.task('default', ['build', 'browser-sync-server', 'watch']);
