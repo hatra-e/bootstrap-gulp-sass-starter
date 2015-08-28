@@ -15,7 +15,7 @@ var app = {
     dist_path:         './dist',
     src_path:          './src',
     main_js_file_name: 'main.min.js',
-    open_browser_on_server_start: false
+    open_browser_on_server_start: true
 };
 
 /**
