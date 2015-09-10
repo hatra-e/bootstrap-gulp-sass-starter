@@ -9,7 +9,7 @@ To use this starter project, you'll need the following things installed on your 
 
 1. [NodeJS](http://nodejs.org) - use the installer.
 2. [Bower](http://bower.io) - `npm install -g bower` (mac users may need sudo).
-3. [GulpJS](https://github.com/gulpjs/gulp) - `$ npm install -g gulp` (mac users may need sudo)
+3. [GulpJS](https://github.com/gulpjs/gulp) - `npm install -g gulp` (mac users may need sudo)
 
 ## Local Installation
 
